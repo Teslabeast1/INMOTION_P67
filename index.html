@@ -1,0 +1,206 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>INMOTION P67 — Concept</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#ff6a00;
+      --bg:#f7f7f7;
+      --card:#111214;
+      --muted:#9b9b9b;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#111;background:var(--bg);-webkit-font-smoothing:antialiased}
+    header{background:#fff;border-bottom:1px solid rgba(0,0,0,0.04)}
+    .container{max-width:var(--max-width);margin:0 auto;padding:20px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo h1{font-family:Anton, sans-serif;margin:0;font-size:20px;letter-spacing:1px}
+    .disclaimer{font-size:12px;color:var(--muted);background:#fff;padding:6px 10px;border-radius:6px;border:1px dashed rgba(0,0,0,0.06)}
+    nav{display:flex;gap:18px;align-items:center}
+    a.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 520px;gap:40px;align-items:center;padding:48px 20px}
+    .hero-left{max-width:640px}
+    .kicker{display:inline-block;background:var(--accent);color:#fff;padding:6px 12px;border-radius:6px;font-family:Anton, sans-serif;font-size:12px}
+    h2{font-size:38px;margin:12px 0 8px;line-height:1.02}
+    p.lead{color:#333;margin:0 0 18px}
+    .spec-row{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .spec{background:#111;color:#fff;padding:14px 18px;border-radius:10px;min-width:120px;display:flex;flex-direction:column;align-items:flex-start}
+    .spec .num{font-family:Anton, sans-serif;font-size:18px}
+    .spec small{opacity:0.8;color:#ddd}
+    .cta-row{margin-top:20px;display:flex;gap:12px}
+    /* HERO RIGHT IMAGE */
+    .hero-right{display:flex;justify-content:center}
+    .product-card{background:#fff;border-radius:12px;padding:22px;box-shadow:0 12px 40px rgba(16,24,40,0.08);max-width:520px;width:100%;text-align:center}
+    .product-card img{width:100%;height:auto;border-radius:8px}
+    /* FEATURES */
+    .features{padding:40px 20px}
+    .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:var(--max-width);margin:0 auto}
+    .feature{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.04)}
+    .feature h4{margin:6px 0 8px}
+    .feature p{margin:0;color:var(--muted)}
+    /* Gallery */
+    .gallery{padding:36px 20px}
+    .gallery-grid{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+    .gallery-grid img{width:220px;height:140px;object-fit:cover;border-radius:10px}
+    /* CTA banner */
+    .cta-banner{background:linear-gradient(90deg,var(--card),#222);color:#fff;padding:28px;border-radius:12px;margin:28px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .cta-banner h3{margin:0;font-size:20px}
+    .footer{padding:20px;text-align:center;color:var(--muted);font-size:13px}
+    /* Responsive */
+    @media (max-width:960px){
+      .hero{grid-template-columns:1fr;gap:18px;padding:28px}
+      .features-grid{grid-template-columns:repeat(2,1fr)}
+      .spec-row{justify-content:flex-start}
+    }
+    @media (max-width:560px){
+      .features-grid{grid-template-columns:1fr}
+      .spec{min-width:100%}
+      .topbar{flex-direction:column;align-items:flex-start}
+      .hero-right{order:-1}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container topbar">
+    <div class="logo">
+      <h1>INMOTION P67</h1>
+      <div style="font-size:13px;color:var(--muted)">Concept • EUC Mockup</div>
+    </div>
+
+    <nav>
+      <div class="disclaimer">FAN MADE / CONCEPT — Not affiliated with InMotion</div>
+      <a class="btn" href="#buy">Buy Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-left">
+      <div class="kicker">INMOTION P67</div>
+      <h2>The future of single-wheel mobility — power, range and style</h2>
+      <p class="lead">A concept model that pushes EUC performance to the next level. Designed for slam-dunk acceleration and composed, stable handling across city streets and open roads.</p>
+
+      <div class="spec-row" aria-hidden="false">
+        <div class="spec">
+          <div class="num">250V</div>
+          <small>High-Voltage Platform</small>
+        </div>
+        <div class="spec">
+          <div class="num">112 mph</div>
+          <small>Max Speed (concept)</small>
+        </div>
+        <div class="spec">
+          <div class="num">22000W</div>
+          <small>Peak Power</small>
+        </div>
+        <div class="spec">
+          <div class="num">140 mm</div>
+          <small>Suspension Travel</small>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn" href="#gallery">See gallery</a>
+        <a class="btn" href="#specs" style="background:#333">Detailed specs</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="product-card" role="img" aria-label="INMOTION P67 image">
+        <img src="assets/euc-main.jpg" alt="INMOTION P67 main shot">
+        <div style="text-align:left;margin-top:12px;color:var(--muted)">
+          <div style="font-weight:600">INMOTION P67</div>
+          <div style="font-size:13px">Premium concept — lightweight composite shell, active stabilization</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <h3 style="margin:0 0 18px">Core features</h3>
+      <div class="features-grid">
+        <div class="feature">
+          <div style="font-size:22px;font-weight:700">Active Stabilization</div>
+          <h4>Self-leveling control</h4>
+          <p>High-bandwidth firmware combines gyros and predictive torque for drift-free handling at speed.</p>
+        </div>
+        <div class="feature">
+          <div style="font-size:22px;font-weight:700">Adaptive Power</div>
+          <h4>22000W peak</h4>
+          <p>Instant torque on demand with a smooth acceleration curve and configurable riding modes.</p>
+        </div>
+        <div class="feature">
+          <div style="font-size:22px;font-weight:700">Comfort & Range</div>
+          <h4>140 mm suspension travel</h4>
+          <p>Hydraulic-sim illusion suspension for improved comfort on rough surfaces and extended range.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h3 style="margin-bottom:14px">Gallery</h3>
+      <div class="gallery-grid" id="galleryGrid">
+        <img src="assets/gallery-1.jpg" alt="gallery image 1">
+        <img src="assets/gallery-2.jpg" alt="gallery image 2">
+        <img src="assets/gallery-3.jpg" alt="gallery image 3">
+        <img src="assets/gallery-4.jpg" alt="gallery image 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section id="buy" class="cta-banner container">
+    <div>
+      <h3>Pre-order Concept Build</h3>
+      <div style="color:rgba(255,255,255,0.85)">This is a fan-made concept site. The "Buy Now" action is for demo only.</div>
+    </div>
+    <div style="display:flex;gap:12px">
+      <a class="btn" href="#" onclick="alert('Demo only — not a real purchase')">Pre-order (demo)</a>
+      <a class="btn" style="background:#444" href="#specs">Download Specs</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © Concept design — INMOTION P67 mockup. Not affiliated with the brand. Designed by you.
+  </footer>
+</main>
+
+<script>
+  // small gallery fallback: clicking an image opens it in a new tab
+  document.querySelectorAll('#galleryGrid img').forEach(img=>{
+    img.style.cursor='zoom-in';
+    img.addEventListener('click',()=>window.open(img.src,'_blank'));
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const targetId = a.getAttribute('href').slice(1);
+      if(!targetId) return;
+      const el = document.getElementById(targetId);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+    });
+  });
+</script>
+
+</body>
+</html>
